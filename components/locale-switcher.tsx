@@ -33,7 +33,7 @@ export default function LocaleSwitcher() {
             <NavigationMenuTrigger className="p-0 rounde">
               <LanguagesIcon />
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="uppercase rounde border-none flex flex-col w-20 sm:w-20 lg:w-20 p-3 rounded-sm bg-white text-black">
+            <NavigationMenuContent className="uppercase rounde border-none flex flex-col w-24 sm:w-24 lg:w-20 p-3 rounded-sm bg-white text-black">
               {i18n.locales.map((locale) => {
                 return (
                   <NavigationMenuLink
@@ -41,7 +41,12 @@ export default function LocaleSwitcher() {
                     key={locale}
                     className="cursor-pointer "
                   >
-                    <Link href={redirectedPathName(locale)}>{locale}</Link>
+                    <Link
+                      className="tracking-tighter font-semibold"
+                      href={redirectedPathName(locale)}
+                    >
+                      {locale}
+                    </Link>
                   </NavigationMenuLink>
                 );
               })}

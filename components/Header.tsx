@@ -7,9 +7,20 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { AlignJustify, CircleUser } from "lucide-react";
+import {
+  AlignJustify,
+  BriefcaseBusiness,
+  CircleUser,
+  HomeIcon,
+  MessageCircleMore,
+  MessageSquareMore,
+  MonitorPlayIcon,
+  TvIcon,
+  WalletIcon,
+} from "lucide-react";
 import LocaleSwitcher from "./locale-switcher";
 import OptictvWhite from "../public/assets/White Logo wordmark.webp";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -27,11 +38,21 @@ const Header = () => {
       />
       <div className="hidden sm:flex text-sm text-white font-semibold items-center">
         <nav className="flex gap-5 pr-5 border-r ">
-          <li>Home</li>
-          <li>Channels</li>
-          <li>Pricing</li>
-          <li>Contact Us</li>
-          <li>About Us</li>
+          <li className=" tracking-tighter">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="  tracking-tighter">
+            <Link href="/">Channels</Link>
+          </li>
+          <li className=" tracking-tighter">
+            <Link href="/">Pricing</Link>
+          </li>
+          <li className=" tracking-tighter">
+            <Link href="/">Contact Us</Link>
+          </li>
+          <li className=" tracking-tighter">
+            <Link href="/">About Us</Link>
+          </li>
         </nav>
         <div className="flex items-center gap-2">
           {" "}
@@ -46,21 +67,64 @@ const Header = () => {
         </SheetTrigger>
         <SheetContent className="text-white bg-black bg-opacity-90  border-[#ffffff30] ">
           <Image
-            className="w-28"
+            className="w-36"
             src={OptictvWhite}
             alt="optictv-white-logo"
             width={882}
             height={199}
           />
-          <nav className="flex flex-col gap-7 pt-28 items-center text-white font-semibold">
-            <li>Home</li>
-            <li>Channels</li>
-            <li>Pricing</li>
-            <li>Contact Us</li>
-            <li>About Us</li>
-          </nav>
-          <div className="mt-5 mx-auto text-center">
-            <LocaleSwitcher />
+          <div className="pt-20">
+            <span className="uppercase text-gradient text-sm tracking-tighter">
+              Navigation
+            </span>
+            <nav className="flex flex-col gap-4  ml-4 mt-5 text-white font-semibold">
+              <li className=" tracking-tighter">
+                <Link className="flex gap-2 items-center" href="/">
+                  <HomeIcon />
+                  Home
+                </Link>
+              </li>
+              <li className="  tracking-tighter">
+                <Link className="flex gap-2 items-center" href="/">
+                  <TvIcon />
+                  Channels
+                </Link>
+              </li>
+              <li className=" tracking-tighter">
+                <Link className="flex gap-2 items-center" href="/">
+                  <WalletIcon />
+                  Pricing
+                </Link>
+              </li>
+              <li className=" tracking-tighter">
+                <Link className="flex gap-2 items-center" href="/">
+                  <MessageSquareMore />
+                  Contact Us
+                </Link>
+              </li>
+              <li className=" tracking-tighter">
+                <Link className="flex gap-2 items-center" href="/">
+                  <BriefcaseBusiness />
+                  About Us
+                </Link>
+              </li>
+            </nav>
+          </div>
+
+          <div className="mt-5  ">
+            <span className="uppercase text-gradient text-sm tracking-tighter">
+              Settings
+            </span>
+            <div className="flex flex-col gap-4 ml-4 mt-5  ">
+              <Link
+                className="flex gap-2 items-center tracking-tighter font-semibold"
+                href="/"
+              >
+                <CircleUser className=" cursor-pointer" />
+                Account
+              </Link>
+              <LocaleSwitcher />
+            </div>
           </div>
         </SheetContent>
       </Sheet>
