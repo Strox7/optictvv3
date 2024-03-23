@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/* .styled-h1 {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 170px;
+  letter-spacing: -2.4px;
+  line-height: 52.8px;
+} */
+
+.rounde {
+  border-radius: 10px !important;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #e3b7ca 17.23%,
+    #e2a8c1 42.04%,
+    #d26d99 55.12%,
+    #d15289 71.54%,
+    #b3386e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

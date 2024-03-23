@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "hf": "Experience Difference",
+    "hs": "The Best IPTV In The Planet",
+
+    "buttons": {
+      "buy": "Get Started",
+      "trial": "Free trial"
+    },
+
+    "stats": {
+      "active": "User Active",
+      "happy": "Happy Clients",
+      "new": "New Clients"
+    }
+  }
+}
