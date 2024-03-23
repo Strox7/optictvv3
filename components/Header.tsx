@@ -19,7 +19,7 @@ const Header = () => {
     "
     >
       <Image
-        className="w-28"
+        className="w-36"
         src={OptictvWhite}
         alt="optictv-white-logo"
         width={882}
