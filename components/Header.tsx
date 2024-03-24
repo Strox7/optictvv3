@@ -36,7 +36,7 @@ const Header = () => {
         width={882}
         height={199}
       />
-      <div className="hidden sm:flex text-sm text-white font-semibold items-center">
+      <div className="hidden md:flex text-sm text-white font-semibold items-center">
         <nav className="flex gap-5 pr-5 border-r ">
           <li className=" tracking-tighter">
             <Link href="/">Home</Link>
@@ -62,7 +62,7 @@ const Header = () => {
       </div>
 
       <Sheet>
-        <SheetTrigger className="sm:hidden">
+        <SheetTrigger className="md:hidden">
           <AlignJustify className="text-white" />
         </SheetTrigger>
         <SheetContent className="text-white bg-black bg-opacity-90  border-[#ffffff30] ">

@@ -11,7 +11,7 @@ function Hero({
   dictionary: Awaited<ReturnType<typeof getDictionary>>["hero"];
 }) {
   return (
-    <div className="">
+    <div className="relative  h-screen -mt-16">
       <Image
         className="hidden absolute bottom-0 top-0 z-0 sm:block h-full object-cover"
         src={DeskTopHero}
@@ -26,8 +26,8 @@ function Hero({
         width={2160}
         height={3840}
       />
-      <div className="flex flex-col gap-y-80 items-center">
-        <h1 className=" text-white styled-h1 z-50 relative text-4xl mt-20 font-extrabold tracking-tighter text-center  sm:text-5xl sm:mt-28">
+      <div className=" flex flex-col gap-y-80 items-center">
+        <h1 className=" text-white styled-h1 z-50 relative text-4xl mt-32 font-extrabold tracking-tighter text-center lg:mt-40 sm:text-5xl sm:mt-28">
           {dictionary.hf}
           <br />
           {dictionary.hs}
