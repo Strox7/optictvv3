@@ -6,10 +6,10 @@ export default function Example() {
       <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg relative z-50">
-            <h1 className=" z-50 lg:text-6xl text-3xl font-bold tracking-tighter text-white sm:text-6xl">
+            <h1 className="text-center sm:text-left z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
               Enter a universe of movies and series
             </h1>
-            <p className="mt-4 text-xl text-gray-500">
+            <p className="mt-4 text-xl text-gray-500 ">
               Dive into an unparalleled universe of entertainment today! unique
               selection of 55,000 movies and series
             </p>
