@@ -10,6 +10,9 @@
       "active": "Utilisateur actif",
       "happy": "Clients satisfaits",
       "new": "Nouveaux Clients"
+    },
+    "slider": {
+      "h3": "La maison de tous les événements sportifs "
     }
   }
 }

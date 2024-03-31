@@ -12,6 +12,9 @@
       "active": "User Active",
       "happy": "Happy Clients",
       "new": "New Clients"
+    },
+    "slider": {
+      "h3": "The home of all sports events"
     }
   }
 }

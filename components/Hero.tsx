@@ -11,7 +11,7 @@ function Hero({
   dictionary: Awaited<ReturnType<typeof getDictionary>>["hero"];
 }) {
   return (
-    <div className="relative  h-screen -mt-16">
+    <div className="relative  h-full md:h-screen -mt-16">
       <Image
         className="hidden absolute bottom-0 top-0 z-0 sm:block h-full object-cover"
         src={DeskTopHero}

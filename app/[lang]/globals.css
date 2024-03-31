@@ -10,6 +10,15 @@ li {
   list-style: none;
 }
 
+.gradient {
+  background: rgb(97, 31, 107);
+  background: radial-gradient(
+    circle,
+    rgba(97, 31, 107, 0.768032212885154) 0%,
+    rgba(255, 255, 255, 0) 45%
+  );
+}
+
 /* .styled-h1 {
   font-size: 50px;
   font-weight: 800;
@@ -21,6 +30,15 @@ li {
 
 .rounde {
   border-radius: 10px !important;
+}
+
+.bg-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 6%
+  );
 }
 
 .text-gradient {
