@@ -14,7 +14,7 @@ li {
   background: rgb(97, 31, 107);
   background: radial-gradient(
     circle,
-    rgba(97, 31, 107, 0.768032212885154) 0%,
+    rgba(97, 31, 107, 0.42) 0%,
     rgba(255, 255, 255, 0) 45%
   );
 }
@@ -36,6 +36,15 @@ li {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 6%
+  );
+}
+
+.bt-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(255, 255, 255, 0) 6%
   );
