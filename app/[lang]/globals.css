@@ -14,7 +14,7 @@ li {
   background: rgb(97, 31, 107);
   background: radial-gradient(
     circle,
-    rgba(97, 31, 107, 0.42) 0%,
+    rgba(97, 31, 107, 0.537) 0%,
     rgba(255, 255, 255, 0) 45%
   );
 }
@@ -30,6 +30,15 @@ li {
 
 .rounde {
   border-radius: 10px !important;
+}
+
+.toto {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(0 0 0 / 95%) 10%,
+    rgba(255, 255, 255, 0) 36%
+  );
 }
 
 .bg-gradient {

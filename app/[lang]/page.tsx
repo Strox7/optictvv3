@@ -1,4 +1,6 @@
-import Example from "@/components/Films";
+import Compatible from "@/components/Compatible";
+import Films from "@/components/Films";
+
 import Hero from "@/components/Hero";
 import Slider from "@/components/Slider";
 import Stats from "@/components/Stats";
@@ -15,8 +17,8 @@ export default async function Home({
     <main className="">
       <Hero dictionary={dictionary.hero} />
       <Slider dictionary={dictionary.hero} />
-      <Example />
-      {/* <Stats /> */}
+      <Films />
+      <Compatible />
     </main>
   );
 }
