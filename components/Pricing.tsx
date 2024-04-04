@@ -8,7 +8,7 @@ function Pricing() {
       <h3 className="text-center relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
         Discover Your Best Fit
       </h3>
-      <p className=" mt-4 text-xl text-gray-500 lg:w-[600px] z-50 relative text-center  mx-auto mb-8">
+      <p className=" mt-4 text-xl text-[#888888] lg:w-[600px] z-50 relative text-center  mx-auto mb-8">
         Entertainment made easy with flexible pricing. Find your perfect plan
         for seamless streaming today
       </p>
@@ -17,7 +17,7 @@ function Pricing() {
           <h3 className="text-3xl font-semibold tracking-tighter mb-6 ">
             1Month
           </h3>
-          <p className="mb-5 text-gray-400">
+          <p className="mb-5 text-[#888888]">
             The essentials to provide your best work for clients.
           </p>
           <div className="flex gap-2 items-end">
@@ -32,7 +32,7 @@ function Pricing() {
           >
             Buy plan
           </a>
-          <ul className="flex flex-col gap-3 mt-4 text-gray-400">
+          <ul className="flex flex-col gap-3 mt-4 text-[#888888]">
             <li className="flex gap-2">
               <CheckIcon />
               HD/FHD/4K
@@ -55,7 +55,7 @@ function Pricing() {
           <h3 className="text-3xl font-semibold tracking-tighter mb-6">
             3Months
           </h3>
-          <p className="mb-5 text-gray-400">
+          <p className="mb-5 text-[#888888]">
             The essentials to provide your best work for clients.
           </p>
           <div className="flex gap-2 items-end">
@@ -70,7 +70,7 @@ function Pricing() {
           >
             Buy plan
           </a>
-          <ul className="flex flex-col gap-3 mt-4 text-gray-400">
+          <ul className="flex flex-col gap-3 mt-4 text-[#888888]">
             <li className="flex gap-2">
               <CheckIcon />
               HD/FHD/4K
@@ -99,7 +99,7 @@ function Pricing() {
             </span>
           </div>
 
-          <p className="mb-5 text-gray-400">
+          <p className="mb-5 text-[#888888]">
             The essentials to provide your best work for clients.
           </p>
           <div className="flex gap-2 items-end">
@@ -114,7 +114,7 @@ function Pricing() {
           >
             Buy plan
           </a>
-          <ul className="flex flex-col gap-3 mt-4 text-gray-400">
+          <ul className="flex flex-col gap-3 mt-4 text-[#888888]">
             <li className="flex gap-2">
               <CheckIcon />
               HD/FHD/4K
@@ -137,7 +137,7 @@ function Pricing() {
           <h3 className="text-3xl font-semibold tracking-tighter mb-6">
             6Months
           </h3>
-          <p className="mb-5 text-gray-400">
+          <p className="mb-5 text-[#888888]">
             The essentials to provide your best work for clients.
           </p>
           <div className="flex gap-2 items-end">
@@ -152,7 +152,7 @@ function Pricing() {
           >
             Buy plan
           </a>
-          <ul className="flex flex-col gap-3 mt-4 text-gray-400">
+          <ul className="flex flex-col gap-3 mt-4 text-[#888888]">
             <li className="flex gap-2">
               <CheckIcon />
               HD/FHD/4K

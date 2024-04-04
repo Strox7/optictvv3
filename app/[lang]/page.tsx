@@ -1,6 +1,7 @@
 import Compatible from "@/components/Compatible";
 import Faq from "@/components/Faq";
 import Films from "@/components/Films";
+import Footer from "@/components/Footer";
 
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";

@@ -11,7 +11,7 @@ export default function Films() {
             <h1 className="text-center sm:text-left z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
               Enter a universe of movies and series
             </h1>
-            <p className="text-center sm:text-left mt-4 text-xl text-gray-500 ">
+            <p className="text-center sm:text-left mt-4 text-xl text-[#888888]">
               Dive into an unparalleled universe of entertainment today! unique
               selection of 55,000 movies and series
             </p>

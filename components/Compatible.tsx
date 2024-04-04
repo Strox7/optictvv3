@@ -10,7 +10,7 @@ function Compatible() {
           <h3 className="text-center xl:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
             Watch Everywhere
           </h3>
-          <p className="text-center mt-4 text-xl xl:text-left text-gray-500 lg:w-[600px] z-50 relative  mx-auto mb-6 md:mb-0">
+          <p className="text-center mt-4 text-xl xl:text-left text-[#888888] lg:w-[600px] z-50 relative  mx-auto mb-6 md:mb-0">
             Stream anywhere, anytime! Our IPTV service works on all your devices
             for uninterrupted entertainment
           </p>
