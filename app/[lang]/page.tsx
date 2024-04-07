@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Slider from "@/components/Slider";
 import Stats from "@/components/Stats";
+import Steps from "@/components/Steps";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 
@@ -22,6 +23,7 @@ export default async function Home({
       <Slider dictionary={dictionary.hero} />
       <Films />
       <Compatible />
+      <Steps />
       <Pricing />
       <Faq />
     </main>
