@@ -11,13 +11,14 @@ function Steps() {
           </h3>
           <div>
             <div className="flex mb-8 items-baseline gap-5">
-              <span className="font-bold text-[25px] text-center  w-[135px] h-[75px] sm:w-[85px] sm:h-[85px] flex items-center justify-center  border-[5px] rounded-[100%]   border-[#b3386e]">
+              <span className=" bg-black z-50 font-bold text-[25px] text-center  w-0 h-0 flex p-[30px] items-center justify-center  border-[5px] rounded-[100%]   border-[#b3386e]">
                 1
               </span>
               <div>
                 <div className="flex   flex-col">
-                  <span className="mb-[15px] text-2xl font-semibold tracking-tighter">
+                  <span className="mb-[15px] text-2xl font-semibold tracking-tighter relative">
                     Place order
+                    <div className="after:w-[5px] after:h-[142px]  sm:after:h-[80px] rounded-[7px] after:left-[-56px] sm:after:left-[-56px]  after:z-10 after:top-[49px] sm:after:top-[49px] after:contents-[''] after:absolute after:bg-[#b3386e]" />
                   </span>
                   <span className=" block w-full sm:w-[380px] text-[#888888]">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -26,14 +27,15 @@ function Steps() {
                 </div>
               </div>
             </div>
-            <div className=" relative flex items-baseline mb-8 gap-5">
-              <span className="font-bold text-[25px] text-center w-[135px] h-[75px] sm:w-[85px] sm:h-[85px] flex items-center justify-center border-[5px] rounded-[100%]    border-[#b3386e]">
+            <div className=" flex items-baseline mb-8 gap-5">
+              <span className="bg-black z-50 font-bold text-[25px] text-center w-0 h-0 p-[30px] flex items-center justify-center border-[5px] rounded-[100%]    border-[#b3386e]">
                 2
               </span>
               <div>
-                <div className="before:w-[5px] before:h-[97px]  sm:before:h-[68px] rounded-[7px] before:left-[9%] sm:before:left-[7%]  before:z-10 before:top-[-69%] sm:before:top-[-56%] before:contents-[''] before:absolute before:bg-[#b3386e] flex   flex-col">
-                  <span className="mb-[15px] text-2xl font-semibold tracking-tighter relative">
+                <div className=" flex   flex-col">
+                  <span className=" mb-[15px] text-2xl font-semibold tracking-tighter relative">
                     Check Whatsapp
+                    <div className="after:w-[5px] after:h-[142px]  sm:after:h-[80px] rounded-[7px] after:left-[-56px] sm:after:left-[-56px]  after:z-10 after:top-[49px] sm:after:top-[49px] after:contents-[''] after:absolute after:bg-[#b3386e]" />
                   </span>
                   <span className=" block w-full sm:w-[380px] text-[#888888]">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -42,15 +44,16 @@ function Steps() {
                 </div>
               </div>
             </div>
-            <div className="flex items-baseline mb-8 gap-5 relative">
-              <span className="relative font-bold text-[25px] text-center w-[135px] h-[75px] sm:w-[85px] sm:h-[85px] flex items-center justify-center border-[5px] rounded-[100%]    border-[#b3386e]">
+            <div className="flex items-baseline mb-8 gap-5 ">
+              <span className="bg-black z-50 relative font-bold text-[25px] text-center p-[30px] w-0 h-0 flex items-center justify-center border-[5px] rounded-[100%]    border-[#b3386e]">
                 3
               </span>
               <div>
-                <div className="before:w-[5px] before:h-[97px]  sm:before:h-[68px] rounded-[7px] before:left-[9%] sm:before:left-[7%]  before:z-10 before:top-[-69%] sm:before:top-[-56%] before:contents-[''] before:absolute before:bg-[#b3386e] flex   flex-col">
-                  <span className="mb-[15px] text-2xl font-semibold tracking-tighter">
+                <div className=" flex   flex-col">
+                  <span className="mb-[15px] text-2xl font-semibold tracking-tighter relative">
                     Enjoy IPTV
                   </span>
+
                   <span className=" block w-full sm:w-[380px] text-[#888888]">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ducimus, sint?
