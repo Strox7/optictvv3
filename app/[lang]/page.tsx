@@ -4,10 +4,12 @@ import Films from "@/components/Films";
 import Footer from "@/components/Footer";
 
 import Hero from "@/components/Hero";
+import Leagues from "@/components/Leagues";
 import Pricing from "@/components/Pricing";
 import Slider from "@/components/Slider";
 import Stats from "@/components/Stats";
 import Steps from "@/components/Steps";
+
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 
@@ -22,10 +24,12 @@ export default async function Home({
       <Hero dictionary={dictionary.hero} />
       <Slider dictionary={dictionary.hero} />
       <Films />
+      <Leagues />
       <Compatible />
       <Steps />
       <Pricing />
       <Faq />
+      {/* <WorldWide /> */}
     </main>
   );
 }

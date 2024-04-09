@@ -17,7 +17,7 @@ function Faq() {
       </p>
       <Accordion type="single" collapsible className="lg:w-[800px] mx-auto">
         <AccordionItem className="border-b-[#ffffff30]" value="item-1">
-          <AccordionTrigger className="text-lg tracking-tighter font-semibold ">
+          <AccordionTrigger className=" text-lg tracking-tighter font-semibold ">
             What is Optictv?
           </AccordionTrigger>
           <AccordionContent className="text-[#888888] text-base">

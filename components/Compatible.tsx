@@ -3,9 +3,9 @@ import devices from "../public/assets/Devices asset.webp";
 
 function Compatible() {
   return (
-    <section className="relative overflow-hidden mx-auto  px-4  sm:px-6 lg:px-8 pb-[4.5rem]">
+    <section className="relative overflow-hidden mx-auto  px-4  sm:px-6 lg:px-8 pb-[3rem] lg:pb-[4.5rem]">
       <div className="absolute top-[-27%] left-0 lg:top-[-3%] lg:left-[38%] z-40 h-full w-full gradient xl:hidden pointer-events-none" />
-      <div className="flex flex-row-reverse xl:gap-10 justify-center xl:items-center flex-wrap xl:flex-nowrap">
+      <div className="flex flex-row xl:gap-10 justify-center xl:items-center flex-wrap xl:flex-nowrap">
         <div className="text-center relative ">
           <h3 className="text-center xl:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
             Watch Everywhere
