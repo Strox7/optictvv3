@@ -13,10 +13,11 @@ import premierLeague from "../public/assets/6.webp";
 import rsl from "../public/assets/16.webp";
 import bundesliga from "../public/assets/11.webp";
 import league1 from "../public/assets/10.webp";
+import laliga from "../public/assets/12.webp";
 
 function Leagues() {
   return (
-    <section className="relative mx-auto  px-4  sm:px-6 lg:px-8 mb-[6.5rem]">
+    <section className="relative mx-auto  px-4  sm:px-6 lg:px-8 mb-[1.5rem]">
       <h3 className="mb-14 text-center relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
         Enjoy all football leagues
       </h3>
@@ -78,7 +79,7 @@ function Leagues() {
         </div>
       </div> */}
       <Carousel
-        className="w-full max-w-5xl md:max-w-3xl lg:max-w-5xl  m-auto"
+        className="w-full max-w-5xl md:max-w-5xl lg:max-w-[1220px]  m-auto"
         plugins={[
           Autoplay({
             delay: 2000,
@@ -135,8 +136,18 @@ function Leagues() {
           <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-1/4 ">
             <Image className="" src={rsl} alt="golf" width={350} height={495} />
           </CarouselItem>
+          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-1/4 ">
+            <Image
+              className=""
+              src={laliga}
+              alt="golf"
+              width={350}
+              height={495}
+            />
+          </CarouselItem>
         </CarouselContent>
-        <div className="absolute z-10 h-full inset-0 bg-gradient-to-l from-neutral-200/0 via-neutral-950/5  to-[#000000f3] pointer-events-none" />
+        <div className="absolute h-full bottom-[-37px] toto w-full pointer-events-none" />
+        {/* <div className="absolute z-10 h-full inset-0 bg-gradient-to-l from-neutral-200/0 via-neutral-950/5  to-[#000000f3] pointer-events-none" /> */}
         {/* <div className="absolute z-10 h-full inset-0 bg-gradient-to-l from-gray-200/0 via-black-900/25 to-[#000000] pointer-events-none" /> */}
       </Carousel>
     </section>

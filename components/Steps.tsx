@@ -3,7 +3,7 @@ import payment from "../public/assets/Payment process (billing asset).webp";
 
 function Steps() {
   return (
-    <section className="text-white mx-auto  px-4  sm:px-6 lg:px-8  pt-10 xl:pb-16">
+    <section className="text-white mx-auto  px-4  sm:px-6 lg:px-8  pt-10 xl:pt-0 xl:pb-16">
       <div className="flex gap-5 items-start justify-center">
         <div>
           <h3 className="text-center relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl mb-9">
@@ -11,7 +11,7 @@ function Steps() {
           </h3>
           <div className="xl:flex xl:items-center xl:justify-center xl:flex-wrap">
             <div className="flex mb-8 items-baseline gap-5 xl:flex-col xl:items-center">
-              <span className=" bg-black z-50 font-bold text-[25px] text-center  w-0 h-0 flex p-[30px] items-center justify-center  border-[5px] rounded-[100%]   border-[#b3386e]">
+              <span className=" bg-black z-50 font-bold text-[25px] text-center  w-0 h-0 flex p-[30px] xl:p-[35px] items-center justify-center  border-[5px] rounded-[100%]   border-[#b3386e]">
                 1
               </span>
               <div>
@@ -28,7 +28,7 @@ function Steps() {
               </div>
             </div>
             <div className=" flex items-baseline mb-8 gap-5 xl:flex-col xl:items-center">
-              <span className="bg-black z-50 font-bold text-[25px] text-center w-0 h-0 p-[30px] flex items-center justify-center border-[5px] rounded-[100%]    border-[#b3386e]">
+              <span className="bg-black z-50 font-bold text-[25px] text-center w-0 h-0 p-[30px] xl:p-[35px] flex items-center justify-center border-[5px] rounded-[100%]    border-[#b3386e]">
                 2
               </span>
               <div>
@@ -45,7 +45,7 @@ function Steps() {
               </div>
             </div>
             <div className="flex items-baseline mb-8 gap-5 xl:flex-col xl:items-center">
-              <span className="bg-black z-50 relative font-bold text-[25px] text-center p-[30px] w-0 h-0 flex items-center justify-center border-[5px] rounded-[100%]    border-[#b3386e]">
+              <span className="bg-black z-50 relative font-bold text-[25px] text-center p-[30px] xl:p-[35px] w-0 h-0 flex items-center justify-center border-[5px] rounded-[100%]    border-[#b3386e]">
                 3
               </span>
               <div>

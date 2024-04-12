@@ -95,7 +95,7 @@ function Pricing() {
               12Months
             </h3>
             <span className="bg-[#b3386e] px-3 py-1 rounded-[15px] text-xs font-semibold">
-              Most popular
+              20% Discount
             </span>
           </div>
 

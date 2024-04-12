@@ -2,8 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.image {
+  background-image: url("../../public/assets/Planet.webp");
+  background-size: cover;
+  background-position: top center;
+}
+
 body {
   background-color: black;
+}
+
+.grady {
+  background: rgb(179, 56, 110);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(179, 56, 110, 0.5551470588235294) 17%,
+    rgba(255, 255, 255, 0) 68%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(179, 56, 110, 0.5551470588235294) 17%,
+    rgba(255, 255, 255, 0) 68%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(179, 56, 110, 0.5551470588235294) 17%,
+    rgba(255, 255, 255, 0) 68%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3386e",endColorstr="#ffffff",GradientType=1);
 }
 
 li {
@@ -18,6 +44,15 @@ li {
     rgba(255, 255, 255, 0) 45%
   );
 }
+
+/* .gradient {
+  background: rgb(179, 56, 110);
+  background: radial-gradient(
+    circle,
+    rgb(179, 56, 110, 0.537) 0%,
+    rgba(255, 255, 255, 0) 45%
+  );
+} */
 
 /* .styled-h1 {
   font-size: 50px;
@@ -48,6 +83,26 @@ li {
     rgba(0, 0, 0, 1) 0%,
     rgba(255, 255, 255, 0) 6%
   );
+}
+
+.boxes {
+  background: rgb(179, 56, 110);
+  background: -moz-linear-gradient(
+    347deg,
+    rgba(179, 56, 110, 0) 0%,
+    rgba(19, 19, 19, 1) 43%
+  );
+  background: -webkit-linear-gradient(
+    347deg,
+    rgba(179, 56, 110, 0) 0%,
+    rgba(19, 19, 19, 1) 43%
+  );
+  background: linear-gradient(
+    347deg,
+    rgba(179, 56, 110, 0) 0%,
+    rgba(19, 19, 19, 1) 43%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3386e",endColorstr="#131313",GradientType=1);
 }
 
 .bt-gradient {
