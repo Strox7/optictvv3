@@ -1,9 +1,10 @@
+"use server";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Stats from "./Stats";
 import { getDictionary } from "@/get-dictionary";
 import DeskTopHero from "../public/assets/DesktopHero.jpg";
-import MobileHero from "../public/assets/MobileHero-min.jpg";
+import MobileHero from "../public/assets/MobileHero-min.webp";
 
 function Hero({
   dictionary,
@@ -18,7 +19,6 @@ function Hero({
         alt="optictv-white-logo"
         width={3840}
         height={2160}
-        priority={true}
       />
       <Image
         className=" absolute top-0 bottom-0 z-0 sm:hidden h-full object-cover"
@@ -26,7 +26,7 @@ function Hero({
         alt="optictv"
         width={2160}
         height={3840}
-        priority={true}
+        loading="eager"
       />
       <div className=" flex flex-col gap-y-80 items-center">
         <h1 className=" text-white styled-h1 z-50 relative text-4xl mt-32 font-extrabold tracking-tighter text-center lg:mt-40 sm:text-5xl sm:mt-28">
