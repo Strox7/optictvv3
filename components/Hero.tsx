@@ -3,7 +3,7 @@ import Image from "next/image";
 import Stats from "./Stats";
 import { getDictionary } from "@/get-dictionary";
 import DeskTopHero from "../public/assets/DesktopHero.jpg";
-import MobileHero from "../public/assets/MobileHero.jpg";
+import MobileHero from "../public/assets/MobileHero-min.jpg";
 
 function Hero({
   dictionary,
