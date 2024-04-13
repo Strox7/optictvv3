@@ -1,4 +1,3 @@
-"use server";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Stats from "./Stats";
