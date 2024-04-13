@@ -26,7 +26,6 @@ function Hero({
         width={2160}
         height={3840}
         loading="eager"
-        priority={true}
       />
       <div className=" flex flex-col gap-y-80 items-center">
         <h1 className=" text-white styled-h1 z-50 relative text-4xl mt-32 font-extrabold tracking-tighter text-center lg:mt-40 sm:text-5xl sm:mt-28">
