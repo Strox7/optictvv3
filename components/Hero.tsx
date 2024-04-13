@@ -18,6 +18,7 @@ function Hero({
         alt="optictv-white-logo"
         width={3840}
         height={2160}
+        priority={true}
       />
       <Image
         className=" absolute top-0 bottom-0 z-0 sm:hidden h-full object-cover"
@@ -25,7 +26,6 @@ function Hero({
         alt="optictv"
         width={2160}
         height={3840}
-        loading="eager"
         priority={true}
       />
       <div className=" flex flex-col gap-y-80 items-center">
