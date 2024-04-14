@@ -88,7 +88,7 @@ function Leagues() {
       >
         <div className="absolute z-10 h-full inset-0 bg-gradient-to-r from-neutral-200/0 via-neutral-950/5  to-[#000000f3] pointer-events-none" />
         <CarouselContent className="items-center">
-          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-1/4 ">
+          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-[22%] ">
             <Image
               className=""
               src={seria}
@@ -97,7 +97,7 @@ function Leagues() {
               height={495}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-1/4 ">
+          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-[22%] ">
             <Image
               className=""
               src={premierLeague}
@@ -106,7 +106,7 @@ function Leagues() {
               height={495}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-1/4 ">
+          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-[22%] ">
             <Image
               className=""
               src={mls}
@@ -115,7 +115,7 @@ function Leagues() {
               height={495}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-1/4 ">
+          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-[22%] ">
             <Image
               className=""
               src={bundesliga}
@@ -124,7 +124,7 @@ function Leagues() {
               height={495}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-1/4 ">
+          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-[22%] ">
             <Image
               className=""
               src={league1}
@@ -133,10 +133,10 @@ function Leagues() {
               height={495}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-1/4 ">
+          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-[22%] ">
             <Image className="" src={rsl} alt="golf" width={350} height={495} />
           </CarouselItem>
-          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-1/4 ">
+          <CarouselItem className="basis-1/2  md:basis-1/5 lg:basis-[22%] ">
             <Image
               className=""
               src={laliga}
