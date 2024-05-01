@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="text-white mx-auto  px-4  sm:px-6 lg:px-8 pb-6 border-t border-[#ffffff30] pt-12 ">
+    <footer className="text-white mx-auto  px-4  sm:px-6 lg:px-8 pb-6  pt-12 ">
       <div className="flex flex-wrap gap-12 lg:gap-32 justify-center border-b border-[#ffffff30] pb-16">
         <div className="flex items-center justify-center flex-col lg:block">
           <Image
@@ -37,7 +37,7 @@ function Footer() {
               <li>
                 <Link
                   className="hover:text-[#fafafa] transition duration-300 text-base"
-                  href="#"
+                  href="/about"
                 >
                   About
                 </Link>
@@ -52,7 +52,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="hover:text-[#fafafa] transition duration-300 text-base"
                 >
                   Contact
@@ -60,7 +60,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="privacy-policy"
                   className="hover:text-[#fafafa] transition duration-300 text-base"
                 >
                   Privacy Policy
@@ -68,7 +68,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="refund-policy"
                   className="hover:text-[#fafafa] transition duration-300 text-base"
                 >
                   Refund Policy

@@ -3,12 +3,11 @@ import road from "../public/assets/roadHouse_.jpg";
 export default function Films() {
   return (
     <div className="mb-24 relative overflow-hidden mt-6 md:mt-20  md:mb-20 h-full">
-      <div className="absolute top-[-27%] left-0 lg:top-[3%] lg:left-[-30%] z-10 h-full w-full gradient pointer-events-none" />
       <div className="pb-[370px] pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="absolute z-10 h-full inset-0 bt-gradient pointer-events-none" />
           <div className="sm:max-w-lg relative z-50">
-            <h1 className="text-center sm:text-left z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
+            <h1 className=" text-center sm:text-left z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
               Enter a universe of movies and series
             </h1>
             <p className="text-center sm:text-left mt-4 text-xl text-[#888888]">
@@ -98,7 +97,7 @@ export default function Films() {
 
               <a
                 href="#"
-                className="relative z-50 inline-block rounded  bg-[#b3386e] px-8 py-3 text-center font-medium text-white hover:bg-[#d15289]"
+                className="relative z-50 inline-block rounded-[1.25rem]  bg-gradient-to-b from-[#b43072] to-[#092d76] shadow-lg shadow-[#8f00c37c] px-4 py-3 text-sm  text-center font-medium text-white hover:bg-[#d15289] w-28 sm:w-40"
               >
                 Join Now
               </a>

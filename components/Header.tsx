@@ -1,22 +1,13 @@
 import Image from "next/image";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
   AlignJustify,
+  BookOpenIcon,
   BriefcaseBusiness,
   CircleUser,
   HomeIcon,
-  MessageCircleMore,
   MessageSquareMore,
   MonitorPlayIcon,
-  TvIcon,
-  WalletIcon,
 } from "lucide-react";
 import LocaleSwitcher from "./locale-switcher";
 import OptictvWhite from "../public/assets/White Logo wordmark.webp";
@@ -25,17 +16,20 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header
-      className="flex justify-between items-center pt-[1.1rem] px-9 z-50 relative
-      container
+      className="flex justify-between items-center pt-[1.1rem] px-[1.25rem] z-50 relative
+      container overflow-visible
     "
     >
-      <Image
-        className="w-36"
-        src={OptictvWhite}
-        alt="optictv-white-logo"
-        width={882}
-        height={199}
-      />
+      <Link href="/">
+        <Image
+          className="w-36"
+          src={OptictvWhite}
+          alt="optictv-white-logo"
+          width={882}
+          height={199}
+        />
+      </Link>
+
       <div className="hidden md:flex text-base text-white font-semibold items-center">
         <nav className="flex gap-5 pr-5 border-r ">
           <li className=" tracking-tighter">
@@ -45,13 +39,13 @@ const Header = () => {
             <Link href="/">Channels</Link>
           </li>
           <li className=" tracking-tighter">
-            <Link href="/">Pricing</Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li className=" tracking-tighter">
-            <Link href="/">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </li>
           <li className=" tracking-tighter">
-            <Link href="/">About Us</Link>
+            <Link href="/">Blogs</Link>
           </li>
         </nav>
         <div className="flex items-center gap-2">
@@ -66,13 +60,16 @@ const Header = () => {
           <AlignJustify className="text-white" />
         </SheetTrigger>
         <SheetContent className="text-white bg-black bg-opacity-90  border-[#ffffff30] ">
-          <Image
-            className="w-36"
-            src={OptictvWhite}
-            alt="optictv-white-logo"
-            width={882}
-            height={199}
-          />
+          <Link href="/">
+            <Image
+              className="w-36"
+              src={OptictvWhite}
+              alt="optictv-white-logo"
+              width={882}
+              height={199}
+            />
+          </Link>
+
           <div className="pt-20">
             <span className="uppercase text-gradient text-sm tracking-tighter">
               Navigation
@@ -86,26 +83,27 @@ const Header = () => {
               </li>
               <li className="  tracking-tighter">
                 <Link className="flex gap-2 items-center" href="/">
-                  <TvIcon />
+                  <MonitorPlayIcon />
                   Channels
                 </Link>
               </li>
+
               <li className=" tracking-tighter">
-                <Link className="flex gap-2 items-center" href="/">
-                  <WalletIcon />
-                  Pricing
-                </Link>
-              </li>
-              <li className=" tracking-tighter">
-                <Link className="flex gap-2 items-center" href="/">
+                <Link className="flex gap-2 items-center" href="/contact">
                   <MessageSquareMore />
                   Contact Us
                 </Link>
               </li>
               <li className=" tracking-tighter">
-                <Link className="flex gap-2 items-center" href="/">
+                <Link className="flex gap-2 items-center" href="/about">
                   <BriefcaseBusiness />
                   About Us
+                </Link>
+              </li>
+              <li className=" tracking-tighter">
+                <Link className="flex gap-2 items-center" href="/">
+                  <BookOpenIcon />
+                  Blogs
                 </Link>
               </li>
             </nav>

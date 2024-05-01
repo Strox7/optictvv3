@@ -20,6 +20,8 @@ import ufc from "../public/assets/UFC LOGO.webp";
 import volleyball from "../public/assets/Volleyball logo (1).webp";
 import tabbleTennis from "../public/assets/table tennis.webp";
 import { getDictionary } from "@/get-dictionary";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 function Slider({
   dictionary,
@@ -28,10 +30,21 @@ function Slider({
 }) {
   return (
     // 50% on small screens and 33% on larger screens.
-    <div className="relative  mt-20 md:mt-0 container">
-      <h3 className=" text-3xl lg:text-4xl  leading-6 text-center tracking-tighter mb-8 mt-8 font-bold  text-white">
+    <div className="relative  mt-10 md:mt-[6.5rem] xl:mt-0 container">
+      <h3 className=" text-3xl lg:text-4xl  leading-6 text-center tracking-tighter mb-5  mt-8 font-bold  text-white">
         {dictionary.slider.h3}
       </h3>
+      <div className="mx-auto w-fit mb-8">
+        <Button className=" z-10 relative text-white bg-gradient-to-b from-[#b43072] to-[#092d76]  p-[1px]  rounded-[1.25rem] w-[130px]">
+          {" "}
+          <Link
+            className="font-medium text-sm  flex justify-center items-center bg-black w-full h-full rounded-[1.25rem]"
+            href="/"
+          >
+            View Channels
+          </Link>
+        </Button>
+      </div>
       <Carousel
         className="w-full max-w-5xl md:max-w-3xl lg:max-w-5xl  m-auto"
         plugins={[
@@ -42,7 +55,7 @@ function Slider({
       >
         <div className="absolute z-10 h-full inset-0 bg-gradient-to-r from-neutral-200/0 via-neutral-950/30  to-[#000000] pointer-events-none" />
         <CarouselContent className="items-center">
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-20"
               src={ucl}
@@ -51,7 +64,7 @@ function Slider({
               height={1995}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-20"
               src={cricket}
@@ -60,7 +73,7 @@ function Slider({
               height={1995}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-20"
               src={tennis}
@@ -69,7 +82,7 @@ function Slider({
               height={1995}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-24"
               src={volleyball}
@@ -78,7 +91,7 @@ function Slider({
               height={1995}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-24"
               src={tabbleTennis}
@@ -87,7 +100,7 @@ function Slider({
               height={1995}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-20"
               src={golf}
@@ -96,7 +109,7 @@ function Slider({
               height={1995}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-24"
               src={ufc}
@@ -106,7 +119,7 @@ function Slider({
             />
           </CarouselItem>
 
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-24"
               src={baseball}
@@ -115,7 +128,7 @@ function Slider({
               height={1995}
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-24"
               src={rugby}
@@ -125,7 +138,7 @@ function Slider({
             />
           </CarouselItem>
 
-          <CarouselItem className="basis-1/3  md:basis-1/5 lg:basis-1/6 ">
+          <CarouselItem className="basis-1/3  sm:basis-1/5 lg:basis-1/6 xl:basis-[14%] ">
             <Image
               className="w-9"
               src={nba}

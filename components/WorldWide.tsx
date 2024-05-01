@@ -3,8 +3,8 @@ import phone from "../public/assets/Phone.webp";
 
 function WorldWide() {
   return (
-    <section className="relative overflow-hidden  pt-10  xl:pt-8 lg:mb-8">
-      <div className=" absolute top-[-19%] left-0   -z-10 h-full w-full grady pointer-events-none" />
+    <section className="relative overflow-hidden  pt-10  xl:pt-8 lg:mb-24 mb-12">
+      {/* <div className=" absolute top-[-19%] left-0   -z-10 h-full w-full grady pointer-events-none" /> */}
       <h3 className="text-center relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
         We are worldwide
       </h3>

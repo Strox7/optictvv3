@@ -11,6 +11,7 @@ import Pricing from "@/components/Pricing";
 import Slider from "@/components/Slider";
 import Stats from "@/components/Stats";
 import Steps from "@/components/Steps";
+import Technologies from "@/components/Technologies";
 import WorldWide from "@/components/WorldWide";
 
 import { getDictionary } from "@/get-dictionary";
@@ -23,18 +24,37 @@ export default async function Home({
 }) {
   const dictionary = await getDictionary(lang);
   return (
-    <main className="">
+    <main className=" ">
       <Hero dictionary={dictionary.hero} />
-      <Slider dictionary={dictionary.hero} />
-      <Films />
-      <Leagues />
-      {/* <Copatible2 /> */}
-      <Compatible />
-      <Steps />
-      <WorldWide />
-      <Pricing />
-      <Faq />
-      <Cta />
+      <div className="relative overflow-hidden">
+        <Slider dictionary={dictionary.hero} />
+        <div className="absolute  top-[2%] left-[-28%] z-30 h-[800px] w-full gradient pointer-events-none" />
+        <div className="hidden md:block absolute  top-[7%] left-[57%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
+
+        <Films />
+        <Leagues />
+        {/* <Copatible2 /> */}
+        <Compatible />
+        <div className="absolute  top-[22%] left-[-26%] z-30 h-[800px] w-full gradient pointer-events-none" />
+        <div className="absolute  top-[10%] left-[-53%] z-30 h-[800px] w-full gradient pointer-events-none" />
+        <div className="absolute  top-[20%] left-[67%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
+        <div className="absolute top-[26%] lg:top-[30%] left-[-53%] z-30 h-[800px] w-full gradient pointer-events-none" />
+        <div className="absolute  top-[30%] left-[57%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
+        <Technologies />
+        <WorldWide />
+        <Steps />
+        {/* <div className="absolute top-[37%] sm:top-[40%] md:top-[44%] left-[16%] -z-40 h-[800px] w-full gradient-three  pointer-events-none" />
+        <div className="absolute top-[37%] sm:top-[40%] md:top-[44%] left-[-12%] -z-40 h-[800px] w-full gradient-three  pointer-events-none" /> */}
+
+        <Pricing />
+        <div className="lg:hidden absolute  top-[44%] left-[-63%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
+        <div className="absolute  top-[60%] left-[-53%] z-30 h-[800px] w-full gradient pointer-events-none" />
+        <div className="absolute  top-[60%] left-[57%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
+        <Faq />
+        <div className="absolute  top-[75%] left-[-53%] z-30 h-[800px] w-full gradient pointer-events-none" />
+        <div className="absolute  top-[80%] left-[57%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
+        <Cta />
+      </div>
     </main>
   );
 }
