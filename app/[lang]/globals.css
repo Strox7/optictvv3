@@ -8,14 +8,8 @@
   background-position: top center;
 }
 
-.kmage {
-  background-image: url("../../public/assets/space-background-realistic-starry-night-cosmos-shining-stars-milky-way-stardust-color-galaxy.jpg");
-  background-size: cover;
-  background-position: top center;
-}
-
 .img {
-  background-image: url("../../public/assets/2151005492.jpg");
+  background-image: url("../../public/assets/takeit.webp");
   background-size: cover;
   background-position: top;
   /* opacity: 0.7; */

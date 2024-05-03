@@ -1,7 +1,7 @@
 import Image from "next/image";
-import speedTechnologie from "../public/assets/speed-technologie.jpg";
-import compressionTechnologie from "../public/assets/compression-technologie.jpg";
-import worldTechnologie from "../public/assets/wordl-technologie.jpg";
+import speedTechnologie from "../public/assets/speed-technologie-min.webp";
+import compressionTechnologie from "../public/assets/compression-technologie-min.webp";
+import worldTechnologie from "../public/assets/wordl-technologie-min.webp";
 import { Button } from "./ui/button";
 
 function Technologies() {
