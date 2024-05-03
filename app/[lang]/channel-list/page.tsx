@@ -26,8 +26,8 @@ function page() {
 
             <div>
               {" "}
-              <h1 className="sm:w-[635px] text-center md:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
-                {"we'd"} love to Build more Transparency.
+              <h1 className="sm:w-[635px] text-center md:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-7 text-white sm:text-6xl">
+                Bringing the Product Closer to the Client.
               </h1>
             </div>
           </div>

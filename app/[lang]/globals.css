@@ -152,3 +152,28 @@ li {
   background-clip: text;
   text-fill-color: transparent;
 }
+
+.devos {
+  scrollbar-width: thin;
+  scrollbar-color: #b43072 rgba(41, 41, 41, 0.401);
+
+  ::-webkit-scrollbar {
+  }
+  ::-webkit-scrollbar {
+    width: 20px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #b43072;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(41, 41, 41, 0.401);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-corner {
+    border-radius: 10px;
+  }
+}

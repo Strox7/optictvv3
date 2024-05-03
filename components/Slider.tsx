@@ -39,7 +39,7 @@ function Slider({
           {" "}
           <Link
             className="font-medium text-sm  flex justify-center items-center bg-black w-full h-full rounded-[1.25rem]"
-            href="/"
+            href="/channel-list"
           >
             View Channels
           </Link>
