@@ -31,22 +31,24 @@ const Header = () => {
       </Link>
 
       <div className="hidden md:flex text-base text-white font-semibold items-center">
-        <nav className="flex gap-5 pr-5 border-r ">
-          <li className=" tracking-tighter">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="  tracking-tighter">
-            <Link href="/">Channels</Link>
-          </li>
-          <li className=" tracking-tighter">
-            <Link href="/about">About Us</Link>
-          </li>
-          <li className=" tracking-tighter">
-            <Link href="/contact">Contact Us</Link>
-          </li>
-          <li className=" tracking-tighter">
-            <Link href="/">Blogs</Link>
-          </li>
+        <nav className=" ">
+          <ul className="flex gap-5 pr-5 border-r">
+            <li className=" tracking-tighter">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="  tracking-tighter">
+              <Link href="/">Channels</Link>
+            </li>
+            <li className=" tracking-tighter">
+              <Link href="/about">About Us</Link>
+            </li>
+            <li className=" tracking-tighter">
+              <Link href="/contact">Contact Us</Link>
+            </li>
+            <li className=" tracking-tighter">
+              <Link href="/">Blogs</Link>
+            </li>
+          </ul>
         </nav>
         <div className="flex items-center gap-2">
           {" "}
@@ -74,38 +76,40 @@ const Header = () => {
             <span className="uppercase text-gradient text-sm tracking-tighter">
               Navigation
             </span>
-            <nav className="flex flex-col gap-4  ml-4 mt-5 text-white font-semibold">
-              <li className=" tracking-tighter">
-                <Link className="flex gap-2 items-center" href="/">
-                  <HomeIcon />
-                  Home
-                </Link>
-              </li>
-              <li className="  tracking-tighter">
-                <Link className="flex gap-2 items-center" href="/">
-                  <MonitorPlayIcon />
-                  Channels
-                </Link>
-              </li>
+            <nav>
+              <ul className="flex flex-col gap-4  ml-4 mt-5 text-white font-semibold">
+                <li className=" tracking-tighter">
+                  <Link className="flex gap-2 items-center" href="/">
+                    <HomeIcon />
+                    Home
+                  </Link>
+                </li>
+                <li className="  tracking-tighter">
+                  <Link className="flex gap-2 items-center" href="/">
+                    <MonitorPlayIcon />
+                    Channels
+                  </Link>
+                </li>
 
-              <li className=" tracking-tighter">
-                <Link className="flex gap-2 items-center" href="/contact">
-                  <MessageSquareMore />
-                  Contact Us
-                </Link>
-              </li>
-              <li className=" tracking-tighter">
-                <Link className="flex gap-2 items-center" href="/about">
-                  <BriefcaseBusiness />
-                  About Us
-                </Link>
-              </li>
-              <li className=" tracking-tighter">
-                <Link className="flex gap-2 items-center" href="/">
-                  <BookOpenIcon />
-                  Blogs
-                </Link>
-              </li>
+                <li className=" tracking-tighter">
+                  <Link className="flex gap-2 items-center" href="/contact">
+                    <MessageSquareMore />
+                    Contact Us
+                  </Link>
+                </li>
+                <li className=" tracking-tighter">
+                  <Link className="flex gap-2 items-center" href="/about">
+                    <BriefcaseBusiness />
+                    About Us
+                  </Link>
+                </li>
+                <li className=" tracking-tighter">
+                  <Link className="flex gap-2 items-center" href="/">
+                    <BookOpenIcon />
+                    Blogs
+                  </Link>
+                </li>
+              </ul>
             </nav>
           </div>
 

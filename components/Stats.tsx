@@ -12,19 +12,19 @@ function Stats({
     justify-center gap-3 sm:gap-10 container text-white mb-10"
     >
       <div className="flex  items-center flex-col lg:flex-row lg:gap-4">
-        <h3 className="text-3xl font-bold ">4000+</h3>
+        <span className="text-3xl font-bold ">4000+</span>
         <p className="text-gradient uppercase tracking-tighter">
           {dictionary.stats.active}
         </p>
       </div>
       <div className="flex items-center flex-col lg:flex-row lg:gap-4">
-        <h3 className="text-3xl font-bold ">5080+</h3>
+        <span className="text-3xl font-bold ">5080+</span>
         <p className="text-gradient uppercase tracking-tighter">
           {dictionary.stats.happy}
         </p>
       </div>
       <div className="flex items-center flex-col lg:flex-row lg:gap-4">
-        <h3 className="text-3xl font-bold ">300+</h3>
+        <span className="text-3xl font-bold ">300+</span>
         <p className="text-gradient uppercase tracking-tighter">
           {dictionary.stats.new}
         </p>
