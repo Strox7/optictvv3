@@ -46,7 +46,7 @@ const Header = () => {
               <Link href="/contact">Contact Us</Link>
             </li>
             <li className=" tracking-tighter">
-              <Link href="/">Blogs</Link>
+              <Link href="/blogs">Blogs</Link>
             </li>
           </ul>
         </nav>
@@ -104,7 +104,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className=" tracking-tighter">
-                  <Link className="flex gap-2 items-center" href="/">
+                  <Link className="flex gap-2 items-center" href="/blogs">
                     <BookOpenIcon />
                     Blogs
                   </Link>
