@@ -4,13 +4,29 @@ import Image from "next/image";
 import kmage from "../../../../public/assets/2151005448.jpg";
 import { PortableText } from "@portabletext/react";
 import Cta from "@/components/Cta";
+import { Metadata } from "next";
+import { getDictionary } from "@/get-dictionary";
+import BlogCta from "@/components/BlogCta";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const data: fullBlog = await getData(params.slug);
+  return {
+    title: data.title,
+    description: data.smallDescription,
+  };
+}
 
 async function getData(slug: string) {
   const query = `*[_type == "blog" && slug.current == "${slug}"] {
       "currentSlug": slug.current,
         title,
         content,
-        titleImage
+        titleImage,
+        smallDescription
     }[0]
     `;
 
@@ -20,7 +36,6 @@ async function getData(slug: string) {
 
 export default async function pages({ params }: { params: { slug: string } }) {
   const data: fullBlog = await getData(params.slug);
-  console.log(data);
 
   return (
     <div className="text-white mt-[-80px] z-20   relative overflow-hidden mx-auto       pt-8 lg:pt-28 ">
@@ -71,7 +86,8 @@ export default async function pages({ params }: { params: { slug: string } }) {
           <PortableText value={data.content} />
         </div>
       </div>
-      <Cta />
+      {/* <Cta dictionary={dictionary.hero} /> */}
+      <BlogCta />
     </div>
   );
 }

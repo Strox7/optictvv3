@@ -1,5 +1,7 @@
 {
   "hero": {
+    "metaTitle": "Meilleur abonnement IPTV - Optictv",
+    "metaDescription": "Découvrez les meilleurs services IPTV avec différentes catégories et exigences de contenu. Diffusez facilement des émissions de télévision, des films et des jeux de haute qualité. Commencez dès aujourd'hui pour des offres exclusives !",
     "hf": "Expérience Différence",
     "hs": "La meilleure IPTV de la planète",
     "buttons": {
@@ -12,7 +14,176 @@
       "new": "Nouveaux Clients"
     },
     "slider": {
-      "h3": "La maison de tous les événements sportifs "
+      "h3": "La maison de tous les événements sportifs ",
+      "button": "Voir les chaînes"
+    },
+    "films": {
+      "h2": "Entrez dans un univers de films et de séries",
+      "p": "Plongez dès aujourd’hui dans un univers de divertissement sans précédent ! sélection unique de 55 000 films et séries",
+      "button": "Rejoindre"
+    },
+    "leagues": {
+      "h2": "Profitez de toutes les ligues de football"
+    },
+    "compatible": {
+      "h2": "Regardez partout",
+      "p": "Diffusez n'importe où, n'importe quand ! Notre service IPTV fonctionne sur tous vos appareils pour un divertissement ininterrompu"
+    },
+    "technologies": {
+      "h2": "Nos technologies IPTV",
+      "buttons": {
+        "first": "vitesse",
+        "second": "Efficacité"
+      },
+      "firstBox": {
+        "h3": "Compression de vidéo",
+        "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+      },
+      "secondBox": {
+        "h3": "Vitesse des serveurs",
+        "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+      },
+      "thirdBox": {
+        "h3": "Multidiffusion",
+        "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+      }
+    },
+    "worldWide": {
+      "h2": "Nous sommes dans le monde entier",
+      "p": "Découvrez notre service IPTV pour un divertissement mondial accessible dans tous les pays.",
+      "firstBox": {
+        "h3": "Toute",
+        "p": "Pays"
+      },
+      "secondBox": {
+        "h3": "500+",
+        "p": "serveurs"
+      },
+      "thirdBox": {
+        "h3": "15,000+",
+        "p": "Canaux"
+      },
+      "fourthdBox": {
+        "h3": "50,000+",
+        "p": "Films et séries"
+      }
+    },
+    "steps": {
+      "h2": "Cela ne prend que trois étapes",
+      "firstBox": {
+        "h3": "Passer la commande",
+        "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+      },
+      "secondBox": {
+        "h3": "Vérifiez WhatsApp",
+        "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+      },
+      "thirdBox": {
+        "h3": "Profitez de l'IPTV",
+        "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+      }
+    },
+    "pricing": {
+      "h2": "Découvrez votre meilleur ajustement",
+      "p": "Le divertissement facilité grâce à des tarifs flexibles. Trouvez dès aujourd'hui votre forfait idéal pour un streaming fluide",
+      "onemonth": "1Mois",
+      "threemonth": "3Mois",
+      "sixmonth": "6Mois",
+      "elevenmonth": "12Mois",
+      "discount": "20% de réduction",
+      "commun": {
+        "standart": "Standart",
+        "premium": "Prime",
+        "p": "Les éléments essentiels pour fournir le meilleur travail possible aux clients.",
+        "button": "Commencer",
+        "p1": "HD/FHD/4K",
+        "p2": "15,000 chaînes",
+        "p3": "45,000 Vod",
+        "p4": "Tous les dispositifs",
+        "p5": "24/7 Soutien"
+      }
+    },
+    "faq": {
+      "h2": "Questions fréquemment posées",
+      "p": "Explorez notre section FAQ pour des réponses rapides aux questions courantes à notre sujet",
+      "items": {
+        "itemOne": {
+          "h4": "Qui est Optictv ?",
+          "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+        },
+        "itemTwo": {
+          "h4": "Où puis-je regarder ?",
+          "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+        },
+        "itemThree": {
+          "h4": "Que puis-je regarder sur Optictv ?",
+          "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+        },
+        "itemFour": {
+          "h4": "Est-ce accessible ?",
+          "p": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veritatis sed itaque facere laborum temporibus"
+        }
+      }
+    },
+    "cta": {
+      "h2": "Prenez place dans le meilleur service IPTV.",
+      "button": "Prends-le"
     }
+  },
+  "contact": {
+    "metaTitle": "Contactez-nous",
+    "metaDescription": "Contactez-nous pour toute demande de renseignements, assistance ou opportunité de partenariat concernant nos services IPTV. Notre équipe se consacre à fournir un support client exceptionnel et à garantir que votre expérience visuelle soit transparente. Contactez-nous dès aujourd'hui !",
+    "span": "contact",
+    "h1": "Nous serions ravis de vous répondre.",
+    "button": "24/7 Assistance",
+    "h2": "Discutez avec l'équipe du service OpticTv.",
+    "p": "Text  or complete the form.",
+    "a": "+4407553621281",
+
+    "buttonTwo": "Soumettre"
+  },
+
+  "blog": {
+    "metaTitle": "Blog",
+    "metaDescription": "Retrouvez les dernières tendances, conseils et mises à jour dans le monde de l'IPTV sur notre blog. Restez informé, diverti et en avance grâce aux conseils d’experts et aux actualités du secteur. Plongez dans notre centre de ressources complet pour tout ce qui concerne l'IPTV, conçu pour les passionnés et les novices."
+  },
+  "channelList": {
+    "metaTitle": "Liste des chaînes",
+    "metaDescription": "Find the latest trends, tips and updates in the world of IPTV on our blog. Stay informed, entertained and ahead of the curve with expert insights and industry news. Dive into our comprehensive resource center for all things IPTV, tailored for enthusiasts and novices alike.",
+    "span": "Liste des chaînes",
+    "h1": "Rapprocher le produit du client.",
+    "h2": "Nos chaînes IPTV",
+    "button": "+15 000 chaînes",
+    "p": "Remarque : Cette liste ne montre pas toutes nos chaînes pour en savoir plus",
+    "a": " Contactez-nous",
+    "search": {
+      "placeholder": "Tapez un nom de chaîne...",
+      "empty": "Aucun résultat trouvé."
+    }
+  },
+  "about": {
+    "metaTitle": "À propos",
+    "metaDescription": "Découvrez le futur de la télévision avec notre service IPTV. Découvrez notre mission, notre technologie et notre engagement à fournir un divertissement de haute qualité directement sur votre écran. Rejoignez-nous alors que nous transformons votre façon de vivre la télévision.",
+    "span": "À propos",
+    "h1": "IPTV nouvelle génération.",
+    "h2": "Service client de nouvelle génération.",
+    "speed": {
+      "button": "Top fournisseur",
+      "h2": "Faites l’expérience de l’IPTV haut débit.",
+      "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum ipsam accusamus expedita dolorem ullam.",
+      "p2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque asperiores laboriosam expedita inventore, ipsum iure? Sapiente molestias temporibus alias quos voluptatibus repellat nesciunt odit, enim eum expedita inventore? Nesciunt cupiditate illo similique omnis nemo nobis.",
+      "boxOne": "Années d'expérience",
+      "boxTwo": "Membres de l'équipe",
+      "boxThree": "Évaluation des clients",
+      "boxfoor": "Équipe de soutien",
+      "buttontwo": "Commencer"
+    }
+  },
+  "header": {
+    "home": "Accueil",
+    "channels": "Chaînes",
+    "about": "À propos",
+    "contact": "Contact",
+    "blog": "Blog"
   }
 }

@@ -14,13 +14,18 @@ import rsl from "../public/assets/16.webp";
 import bundesliga from "../public/assets/11.webp";
 import league1 from "../public/assets/10.webp";
 import laliga from "../public/assets/12.webp";
+import { getDictionary } from "@/get-dictionary";
 
-function Leagues() {
+function Leagues({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["hero"];
+}) {
   return (
     <section className="relative mx-auto  px-4  sm:px-6 lg:px-8 mb-[1.5rem]">
-      <h3 className="mb-14 text-center relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
-        Enjoy all football leagues
-      </h3>
+      <h2 className="mb-14 md:max-w-[800px] md:mx-auto text-center relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
+        {dictionary.leagues.h2}
+      </h2>
 
       {/* <div className="flex flex-col justify-center items-center">
         <h3 className="mb-10 text-center xl:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">

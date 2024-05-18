@@ -37,7 +37,7 @@ const Header = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="  tracking-tighter">
-              <Link href="/">Channels</Link>
+              <Link href="/channel-list">Channels</Link>
             </li>
             <li className=" tracking-tighter">
               <Link href="/about">About Us</Link>
@@ -85,7 +85,10 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="  tracking-tighter">
-                  <Link className="flex gap-2 items-center" href="/">
+                  <Link
+                    className="flex gap-2 items-center"
+                    href="/channel-list"
+                  >
                     <MonitorPlayIcon />
                     Channels
                   </Link>

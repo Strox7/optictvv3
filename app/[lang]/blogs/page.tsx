@@ -5,6 +5,21 @@ import { client, urlFor } from "@/lib/sanity";
 import { simipleBlogCard } from "@/lib/interface";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "@/i18n-config";
+
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}): Promise<Metadata> {
+  const dictionary = await getDictionary(lang);
+  return {
+    title: dictionary.blog.metaTitle,
+    description: dictionary.blog.metaDescription,
+  };
+}
 
 async function getData() {
   const query = `*[_type == "blog"] | order(_createdAt desc) {
@@ -12,13 +27,15 @@ async function getData() {
           smallDescription,
           "currentSlug" : slug.current,
           titleImage
+          
       }`;
 
   const data = await client.fetch(query);
   return data;
 }
 
-async function page() {
+async function page({ params: { lang } }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary(lang);
   const data: simipleBlogCard[] = await getData();
   console.log(data);
 
@@ -116,7 +133,7 @@ async function page() {
             ))}
           </div>
         </div>
-        <Cta />
+        <Cta dictionary={dictionary.hero} />
       </div>
     </div>
   );

@@ -35,15 +35,15 @@ function Slider({
         {dictionary.slider.h3}
       </h3>
       <div className="mx-auto w-fit mb-8">
-        <Button className=" z-10 relative text-white bg-gradient-to-b from-[#b43072] to-[#092d76]  p-[1px]  rounded-[1.25rem] w-[130px]">
+        <div className="h-[2.5rem] z-10 relative text-white bg-gradient-to-b from-[#b43072] to-[#092d76]  p-[1px]  rounded-[1.25rem] w-[130px]">
           {" "}
           <Link
             className="font-medium text-sm  flex justify-center items-center bg-black w-full h-full rounded-[1.25rem]"
             href="/channel-list"
           >
-            View Channels
+            {dictionary.slider.button}
           </Link>
-        </Button>
+        </div>
       </div>
       <Carousel
         className="w-full max-w-5xl md:max-w-3xl lg:max-w-5xl  m-auto"

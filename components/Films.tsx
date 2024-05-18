@@ -1,18 +1,22 @@
 import Image from "next/image";
 import road from "../public/assets/roadHouse_.jpg";
-export default function Films() {
+import { getDictionary } from "@/get-dictionary";
+export default function Films({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["hero"];
+}) {
   return (
     <div className="mb-24 relative overflow-hidden mt-6 md:mt-20  md:mb-20 h-full">
       <div className="pb-[370px] pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="absolute z-10 h-full inset-0 bt-gradient pointer-events-none" />
-          <div className="sm:max-w-lg relative z-50">
-            <h1 className=" text-center sm:text-left z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
-              Enter a universe of movies and series
-            </h1>
+          <div className="sm:max-w-[38rem] relative z-50">
+            <h2 className=" text-center sm:text-left z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
+              {dictionary.films.h2}
+            </h2>
             <p className="text-center sm:text-left mt-4 text-xl text-[#888888]">
-              Dive into an unparalleled universe of entertainment today! unique
-              selection of 55,000 movies and series
+              {dictionary.films.p}
             </p>
           </div>
           <div>
@@ -99,7 +103,7 @@ export default function Films() {
                 href="#"
                 className="relative z-50 inline-block rounded-[1.25rem]  bg-gradient-to-b from-[#b43072] to-[#092d76] shadow-lg shadow-[#8f00c37c] px-4 py-3 text-sm  text-center font-medium text-white hover:bg-[#d15289] w-28 sm:w-40"
               >
-                Join Now
+                {dictionary.films.button}
               </a>
             </div>
           </div>

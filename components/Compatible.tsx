@@ -1,17 +1,21 @@
 import Image from "next/image";
 import devices from "../public/assets/Devices asset.webp";
+import { getDictionary } from "@/get-dictionary";
 
-function Compatible() {
+function Compatible({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["hero"];
+}) {
   return (
     <section className="relative overflow-hidden mx-auto  px-4  sm:px-6 lg:px-8 pb-[3rem] mt-16 xl:mt-0 lg:pb-16 pt-8 lg:pt-12">
       <div className="flex flex-row xl:gap-10 justify-center xl:items-center flex-wrap xl:flex-nowrap">
         <div className="text-center relative ">
-          <h3 className="text-center xl:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
-            Watch Everywhere
-          </h3>
-          <p className="text-center mt-4 text-xl xl:text-left text-[#888888] lg:w-[600px] z-50 relative  mx-auto mb-6 md:mb-0">
-            Stream anywhere, anytime! Our IPTV service works on all your devices
-            for uninterrupted entertainment
+          <h2 className="text-center xl:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
+            {dictionary.compatible.h2}
+          </h2>
+          <p className="text-center mt-4 text-xl xl:text-left text-[#888888] lg:w-[600px] z-50 relative   mb-6 md:mb-0">
+            {dictionary.compatible.p}
           </p>
         </div>
         <div className="relative z-30 ">

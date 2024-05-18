@@ -11,4 +11,10 @@ export interface fullBlog {
   title: string;
   content: any;
   titleImage: any;
+  smallDescription: string;
+}
+
+export interface mapData {
+  currentSlug: string;
+  _updatedAt: string;
 }

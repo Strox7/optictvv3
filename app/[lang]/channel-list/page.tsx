@@ -4,8 +4,24 @@ import Faq from "@/components/Faq";
 import Image from "next/image";
 import kmage from "../../../public/assets/2151005448.jpg";
 import ChannelList from "@/components/Channel-list";
+import { Metadata } from "next";
+import { Locale } from "@/i18n-config";
+import { getDictionary } from "@/get-dictionary";
 
-function page() {
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}): Promise<Metadata> {
+  const dictionary = await getDictionary(lang);
+  return {
+    title: dictionary.channelList.metaTitle,
+    description: dictionary.channelList.metaDescription,
+  };
+}
+
+async function page({ params: { lang } }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary(lang);
   return (
     <div className="text-white mt-[-80px] z-20   relative overflow-hidden mx-auto       pt-8 lg:pt-28 ">
       <div className="absolute  top-[40%] left-[55%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
@@ -21,13 +37,13 @@ function page() {
         <div className="flex relative z-50 pt-[16rem] md:pt-[15rem] justify-center mb-20 flex-wrap  px-4  sm:px-6 lg:px-8 ">
           <div className="md:flex">
             <span className=" text-center uppercase md:font-medium   block  mb-3 md:mb-0 text-base  md:mr-8 mt-4  tracking-tighter text-white md:text-gradient ">
-              Channel list
+              {dictionary.channelList.span}
             </span>
 
             <div>
               {" "}
               <h1 className="sm:w-[635px] text-center md:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-7 text-white sm:text-6xl">
-                Bringing the Product Closer to the Client.
+                {dictionary.channelList.h1}
               </h1>
             </div>
           </div>
@@ -38,9 +54,9 @@ function page() {
       <div className="absolute  top-[10%] left-[55%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
 
       <div className="mt-[-8rem] lg:mt-[-145px] relative z-50 pb-20">
-        <ChannelList />
+        <ChannelList dictionary={dictionary.channelList} />
       </div>
-      <Cta />
+      <Cta dictionary={dictionary.hero} />
     </div>
   );
 }

@@ -3,8 +3,24 @@ import Image from "next/image";
 import kmage from "../../../public/assets/2151005448.jpg";
 import Technologies from "@/components/Technologies";
 import Speed from "@/components/Speed";
+import { Locale } from "@/i18n-config";
+import { getDictionary } from "@/get-dictionary";
+import { Metadata } from "next";
 
-function page() {
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}): Promise<Metadata> {
+  const dictionary = await getDictionary(lang);
+  return {
+    title: dictionary.about.metaTitle,
+    description: dictionary.about.metaDescription,
+  };
+}
+
+async function page({ params: { lang } }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary(lang);
   return (
     <div className="text-white mt-[-80px] z-20   relative overflow-hidden mx-auto      pt-8 lg:pt-28 ">
       <div className="absolute  top-[40%] left-[55%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
@@ -19,16 +35,16 @@ function page() {
         <div className="flex relative z-50 pt-[16rem] md:pt-[15rem] justify-center mb-20 flex-wrap  px-4  sm:px-6 lg:px-8 ">
           <div className="md:flex">
             <span className="text-center uppercase md:font-medium   block  mb-3 md:mb-0 text-base  md:mr-8 mt-4  tracking-tighter text-white md:text-gradient">
-              about
+              {dictionary.about.span}
             </span>
 
             <div>
               {" "}
-              <h1 className=" text-center md:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
-                Next-Gen IPTV.
+              <h1 className=" text-center md:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter leading-8  md:leading-6 text-white sm:text-6xl">
+                {dictionary.about.h1}
               </h1>
-              <h1 className=" text-center md:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-6 text-white sm:text-6xl">
-                Next-Gen Customer Service.
+              <h1 className=" text-center md:text-left relative z-50 lg:text-6xl text-3xl font-bold tracking-tighter  leading-8  md:leading-6 text-white sm:text-6xl">
+                {dictionary.about.h2}
               </h1>
               {/* <p className="md:w-[300px] w-full mt-4 text-center md:text-left text-[#888888]">
                 if you have any questions, inquiries please {"don't"} hesitate
@@ -43,10 +59,10 @@ function page() {
       <div className="absolute  top-[50%] left-[-55%] z-30 h-[800px] w-full gradient pointer-events-none" />
       <div className="absolute  top-[10%] left-[55%] z-30 h-[800px] w-full gradient-two pointer-events-none" />
 
-      <Speed />
-      <Technologies />
+      <Speed dictionary={dictionary.about} />
+      <Technologies dictionary={dictionary.hero} />
 
-      <Cta />
+      <Cta dictionary={dictionary.hero} />
     </div>
   );
 }

@@ -3,26 +3,31 @@ import speedTechnologie from "../public/assets/speed-technologie-min.webp";
 import compressionTechnologie from "../public/assets/compression-technologie-min.webp";
 import worldTechnologie from "../public/assets/wordl-technologie-min.webp";
 import { Button } from "./ui/button";
+import { getDictionary } from "@/get-dictionary";
 
-function Technologies() {
+function Technologies({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["hero"];
+}) {
   return (
     <section className="relative z-50 text-white  mx-auto  px-4  sm:px-6 lg:px-8 pb-8  pt-0 xl:pb-16">
       <div className="flex flex-col justify-center items-center gap-3">
         <div className="flex items-center w-full mb-3 md:mb-0 flex-col md:flex-row md:w-[750px] justify-between ">
-          <h3 className=" text-3xl lg:text-4xl  leading-6 text-left tracking-tighter mb-8 mt-8 font-bold  text-white">
-            Our IPTV Technologies
-          </h3>
+          <h2 className=" text-3xl lg:text-4xl  leading-6 text-left tracking-tighter mb-8 mt-8 font-bold  text-white">
+            {dictionary.technologies.h2}
+          </h2>
           <div className="flex gap-2">
             <Button className=" z-10 relative text-white bg-gradient-to-b from-[#b43072] to-[#092d76]  p-[1px]  rounded-[1.25rem] w-28">
               <span className="flex justify-center items-center bg-black w-full h-full rounded-[1.25rem]">
                 {" "}
-                Speed
+                {dictionary.technologies.buttons.first}
               </span>
             </Button>
             <Button className=" z-10 relative text-white bg-gradient-to-b from-[#b43072] to-[#092d76]  p-[1px]  rounded-[1.25rem] w-28">
               <span className="flex justify-center items-center bg-black w-full h-full rounded-[1.25rem]">
                 {" "}
-                Efficiency
+                {dictionary.technologies.buttons.second}
               </span>
             </Button>
           </div>
@@ -43,12 +48,11 @@ function Technologies() {
               </div>
 
               <div className="p-4">
-                <h4 className=" relative z-50 lg:text-3xl text-xl font-bold tracking-tighter text-left  leading-6 text-white ">
-                  Video Compression
+                <h4 className="relative z-50 lg:text-3xl text-xl font-bold tracking-tighter text-left  leading-6 text-white sm:text-3xl ">
+                  {dictionary.technologies.firstBox.h3}
                 </h4>
                 <p className="mt-4 text-[#888888] text-sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Error veritatis sed itaque facere laborum temporibus.
+                  {dictionary.technologies.firstBox.p}
                 </p>
               </div>
             </div>
@@ -70,11 +74,10 @@ function Technologies() {
 
               <div className="p-4">
                 <h4 className=" relative z-50 lg:text-3xl text-xl font-bold tracking-tighter text-left  leading-6 text-white sm:text-3xl">
-                  Servers Speed
+                  {dictionary.technologies.secondBox.h3}
                 </h4>
                 <p className="mt-4 text-[#888888] text-sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Error veritatis sed itaque facere laborum temporibus.
+                  {dictionary.technologies.secondBox.p}
                 </p>
               </div>
             </div>
@@ -97,11 +100,10 @@ function Technologies() {
 
             <div className="p-4">
               <h4 className=" relative z-50 lg:text-3xl text-xl font-bold tracking-tighter text-left  leading-6 text-white sm:text-3xl">
-                Multicasting
+                {dictionary.technologies.thirdBox.h3}
               </h4>
               <p className="mt-4 text-[#888888] text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-                veritatis sed itaque facere laborum temporibus.
+                {dictionary.technologies.thirdBox.p}
               </p>
             </div>
           </div>

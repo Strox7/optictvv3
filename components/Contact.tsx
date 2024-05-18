@@ -2,19 +2,24 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import speed from "../public/assets/contact1.jpg";
 import Image from "next/image";
+import { getDictionary } from "@/get-dictionary";
 
-function Contact() {
+function Contact({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["contact"];
+}) {
   return (
     <section className="mx-auto  px-4  relative z-50 sm:px-6 lg:px-8 pb-8   xl:pb-16 mt-[-8rem] lg:mt-[-145px] mb-12">
       <div className="flex items-center lg:items-end flex-col lg:flex-row justify-center gap-[25px] sm:gap-[80px]">
         <div className="flex flex-col items-center lg:items-start gap-0 lg:gap-4">
-          <Button className=" z-10 relative text-white bg-gradient-to-b from-[#b43072] to-[#092d76]  p-[1px]   rounded-[1.25rem] w-28">
+          <Button className=" z-10 relative text-white bg-gradient-to-b from-[#b43072] to-[#092d76]  p-[1px]   rounded-[1.25rem] w-[137px]">
             <span className="flex justify-center items-center bg-black w-full h-full rounded-[1.25rem]  ">
-              24/7 Support
+              {dictionary.button}
             </span>
           </Button>
           <h3 className="mb-0 text-3xl lg:text-4xl text-center lg:text-left  leading-6  tracking-tighter  mt-8 font-bold  text-white w-full sm:w-[400px]">
-            Talk with the Team about OpticTv Service.
+            {dictionary.h2}
           </h3>
           <p className="mt-4 mb-4 text-center md:text-left text-[#888888]">
             Text {""}
@@ -82,7 +87,7 @@ function Contact() {
             ></textarea>
           </div>
           <Button className="text-left z-10 relative text-white  bg-gradient-to-b from-[#b43072] to-[#092d76]  shadow-lg shadow-[#8f00c37c]  rounded-[1.25rem] w-28 sm:w-40">
-            Submit
+            {dictionary.buttonTwo}
           </Button>
         </form>
       </div>
