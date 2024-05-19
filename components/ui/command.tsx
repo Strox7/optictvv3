@@ -66,7 +66,7 @@ const CommandList = React.forwardRef<
   <CommandPrimitive.List
     ref={ref}
     className={cn(
-      "devos max-h-[600px] bg-black  p-4 rounded-[10px]  overflow-y-auto overflow-x-hidden ",
+      "devos max-h-[590px] bg-black  p-4 rounded-[10px]  overflow-y-auto overflow-x-hidden ",
       className
     )}
     {...props}
